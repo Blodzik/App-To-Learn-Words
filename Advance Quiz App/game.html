@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>App To Learn Words</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <button onclick = "window.location.href='index.html';" class="back-btn">Back</button>
+        <div class="container">
+            <div>
+                <input placeholder="Enter a translation" id="translation-input" type="text" required>
+                <input placeholder="Enter a word" id="word-input" type="text" required>
+            </div>        
+            <div>
+                <button id="btn">Submit</button>
+                <button id="start">Start Game</button>
+            </div>
+            <div class="show-container"></div>
+        </div>
+        <div class="start-game-cont">
+            <div class="score-cont">
+                <div id="score"></div>
+            </div>
+        </div>
+        
+
+        <script src="main.js"></script>
+    </body>
+</html>
+
