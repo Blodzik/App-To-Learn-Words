@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.background-container {
+    min-height: 100vh;
+    background-image: url(assets/backgroundImg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.start-btn {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    border: none;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(45, 45, 158);
+    transition: padding 0.2s, opacity 0.2s;
+}
+
+.start-btn:hover {
+    padding: 25px 45px;
+    opacity: 0.9;
+}
+
+.back-btn {
+    width: 80px;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: rgb(45, 45, 158);
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: rgb(67, 67, 205);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container input {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    font-size: 17px;
+    color: black
+}
+
+.container button {
+    background-color: rgb(45, 45, 158);
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 20px;
+    transition: background-color 0.3s;
+}
+
+.container button:hover {
+    background-color: rgb(67, 67, 205);
+}
+
+.show-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.show-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.show-words-cont {
+    border: 1px solid lightgoldenrodyellow;
+    margin-bottom: 20px;
+    background-color: rgb(67, 67, 205);
+    padding: 5px 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.show {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dash {
+    color: lightgoldenrodyellow;
+    margin-top: 5px;
+}
+
+.show-translation, .show-word {
+    margin-top: 8px;
+    font-size: 20px;
+    display: inline-block;
+    color: lightgoldenrodyellow;
+}
+
+.bi-x-lg {
+    color: lightcyan;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.game-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-cont {
+    text-align: center;
+    display: none;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.score-cont div {
+    color: black;
+    background-color: white;
+    width: 120px;
+    display: inline-block;
+    font-size: 23px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.words-cont {
+    background-color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    height: 220px;
+    width: 300px;
+}
+
+.words-cont input {
+    background-color: rgb(210, 209, 209);
+    border: none;
+    padding: 15px 10px;
+    border-radius: 5px;
+    color: black;
+    width: 100%;
+}
+
+.words-cont div {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: orangered;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.words-cont button {
+    margin-top: 15px;
+    background-color: rgb(45, 45, 158);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.words-cont button:hover {
+    background-color: rgb(67, 67, 205);
+}
+
+.mistake-div {
+    font-size: 20px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px; 
+}
+
+.right-div {
+    font-size: 20px;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+    gap: 50px;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 28px;
+}
+
+.start-again-button, .start-again-button-mist {
+    background-color: rgb(45, 45, 158);
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: background-color 0.3s;
+}
+
+.start-again-button-mist:hover, .start-again-button:hover {
+    background-color: rgb(67, 67, 205);
+}
